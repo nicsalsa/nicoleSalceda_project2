@@ -1,0 +1,24 @@
+// SERVICES section
+.services {
+   background-color: $bg-accent1;
+   padding: 10rem 0;
+   text-align: center;
+   .services__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 1rem;
+      .services__list__item {
+         padding: 10px;
+         // margin: 0 1rem;
+         .fas {
+            font-size: 5rem;
+         }
+         .services__content {
+            @include fontSize(15);
+         }
+      }
+      .services__list__item--2 {
+         margin: 0 3.5rem;
+      }
+   }
+}

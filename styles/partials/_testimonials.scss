@@ -1,0 +1,22 @@
+// TESTIMONIALS SECTION STYLES
+.testimonials {
+   background: $bg-lightest;
+   text-align: center;
+   padding: 5rem;
+   .tml {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 0;
+      .tml__image {
+         flex: 1 0 40%;
+      }
+      .tml__content {
+         text-align: left;
+         padding-left: 2rem;
+         .tml__content--content {
+            @include fontSize(16);
+         }
+      }
+   }
+}

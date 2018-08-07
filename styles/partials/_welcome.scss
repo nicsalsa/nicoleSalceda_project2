@@ -1,0 +1,15 @@
+ // WELCOME SECTION STYLES
+.welcome {
+   background-color: $bg-lightest;
+   padding: 10rem;
+   margin: 0 auto;
+   text-align: center;
+   .welcome__title {
+      .welcome__title--accent {
+         color: $font-accent;
+      }
+   }
+   .welcome__text {
+      @include fontContent($font-description);
+   }
+}

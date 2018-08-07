@@ -15,17 +15,28 @@
    // accents
    $bg-accent1: #bec884; 
    $bg-accent2: #f2b094;
+
    // font-colors 
    $font-dark: #2a2a2a;
+   $font-accent: #285d64;
+   $font-light: #efefef;
 
 // =====================MIXINS===================
 
-// @mixin fontSize($sizeValue) {
-//    font-size: $sizeValue * 1px;
-//    font-size: ($sizeValue/10) * 1rem;
-//    color: #2a2a2a;
-//    font-weight: 400;
-// }
+@mixin fontSize($sizeValue) {
+   font-size: $sizeValue * 1px;
+   font-size: ($sizeValue/10) * 1rem;
+   color: #2a2a2a;
+   font-weight: 400;
+   font-family: 'Lato', sans-serif;
+   line-height: 1.5;
+}
+@mixin fontContent($fontFamily) {
+   font-family: $fontFamily;
+   font-size: 2rem;
+   line-height: 1.5;
+   padding: 4rem 0;
+}
 @mixin position($type, $top, $right, $bottom, $left) {
    position: $type;
    top: $top;

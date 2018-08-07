@@ -1,0 +1,26 @@
+// CLIENTS SECTION STYLES
+.clients {
+   background-color: $bg-medium;
+   padding: 5rem 0;
+   .clientGallery {
+      .clientGallery__list__item {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+         width: 800px;
+         padding: 5rem 10rem 0;
+         img {
+            width: 100px;
+            padding: 0 0 5rem 0;
+         }
+         .clientGallery__list__description {
+            text-align: center;
+            @include fontSize(16);
+            .clientGallery__list__description--signature {
+               padding-top: 5rem;
+            }
+         } 
+      }
+   }
+}

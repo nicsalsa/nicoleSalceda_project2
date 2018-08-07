@@ -1,0 +1,31 @@
+// SAMPLE SECTIONS STYLES
+.sample {  
+   .sampleGallery {
+      display: flex;
+      justify-content: row;
+      .sampleImg {
+         @include position(relative, 0, 0, 0, 0);
+         img {
+            display: block;  
+            }
+         .sampleImg__content {
+            background: rgba(42,42,42,0.8);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $font-light;
+            padding: 0 5rem;
+            @include position(absolute, 0, 0, 0, 0);
+            display:none;
+            .sampleImg__content--content {
+               font-family: 'Lato', sans-serif;
+            }
+         }
+      }
+      .sampleImg:hover .sampleImg__content {
+         display: flex;
+      }
+   }
+}

@@ -5,7 +5,7 @@ header {
    background: url(../assets/image-1.jpeg) fixed no-repeat bottom;
    background-size: cover;
    .header__nav {
-      // height: 50px;
+      padding: 2rem 0;
       .header__navWrapper {
          display: flex;
          justify-content: space-between;
@@ -26,15 +26,10 @@ header {
       width: 65%;
       height: 100vh;
       position: relative;
-      // text-align: right;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: flex-end;
       .hero__content {
          position: absolute;
          right: 0;
-         top: 30%;
+         top: 25%;
          text-align: left;
          .hero__title {
          font-size: 6.5rem;

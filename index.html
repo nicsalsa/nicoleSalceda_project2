@@ -6,8 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,700|Lato:400,700" rel="stylesheet">
    <link rel="stylesheet" href="styles/styles.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
    <title>Photography</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
          <div class="hero__content">
             <h1 class="hero__title txt-uppercase">Welcome</h1>
             <p class="hero__text txt-uppercase">To my photography website</p>
-            <button class="hero__button txt-uppercase txt-button"><a href="#">start</a></button>
+            <button class="hero__button txt-uppercase txt-button"><a href="#" class="txt-uppercase">start</a></button>
          </div>
       </div>
    </header>
@@ -38,10 +38,10 @@
    <main>
       <!-- WELCOME section begins -->
       <section class="welcome wrapper">
-         <h2 class="welcome__title title txt-uppercase">welcome to photography</h2>
+         <h2 class="welcome__title title txt-uppercase">welcome to <span class="welcome__title--accent">photography</span></h2>
          <p class="welcome__text txt-content">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli seu nunc moletie molestie vel
          tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
-         <button class="welcome__button txt-button"><a href="#">more</a></button>
+         <button class="welcome__button txt-button"><a href="#" class="txt-uppercase">more</a></button>
       </section>
       <!-- end of welcome section -->
       <!-- SERVICES section begins -->
@@ -90,7 +90,7 @@
             <li class="sampleGallery__item sampleGallery__item--1">
                <a href="#">
                   <figure class="sampleImg">
-                     <img src="assets/image-3" alt="Sample shoot with happy woman having fun while moving and hair against her face">
+                     <img src="assets/image-3.jpeg" alt="Sample shoot with happy woman having fun while moving and hair against her face">
                      <figcaption class="sampleImg__content">
                         <h3 class="sampleImg__title subtitle txt-uppercase">Sample Shoot</h3>
                         <p class="sampleImg__content--content content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -136,11 +136,11 @@
       <!-- END of sample section -->
       <!-- CLIENTS SECTION BEGINS -->
       <section class="clients">
-         <h2 class="clients__title title txt-uppercase"></h2>
+         <h2 class="clients__title title txt-uppercase">happy clients</h2>
          <!-- flickity scroll goes here -->
          <ul class="clientGallery wrapper">
             <li class="clientGallery__list">
-               <figure class="clientGallery__list clientGallery__list--1">
+               <figure class="clientGallery__list__item clientGallery__list--1">
                   <img src="assets/image-7.jpeg" alt="A happy client of photography">
                   <figcaption class="clientGallery__list__description">
                      <p class="clientGallery__list__description--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque
@@ -150,17 +150,17 @@
                </figure>
             </li>
             <li class="clientGallery__list">
-               <figure class="clientGallery__list clientGallery__list--1">
+               <figure class="clientGallery__list__item clientGallery__list--2">
                   <img src="assets/image-7.jpeg" alt="A happy client of photography">
                   <figcaption class="clientGallery__list__description">
                      <p class="clientGallery__list__description--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi
                         scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                     <p class="clientGallery__list__description--signature">~ Mary Jane ~</p>
+                     <p class="clientGallery__list__description--signature">~ Jane Mary ~</p>
                   </figcaption>
                </figure>
             </li>
             <li class="clientGallery__list">
-               <figure class="clientGallery__list clientGallery__list--1">
+               <figure class="clientGallery__list__item clientGallery__list--3">
                   <img src="assets/image-7.jpeg" alt="A happy client of photography">
                   <figcaption class="clientGallery__list__description">
                      <p class="clientGallery__list__description--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi
@@ -402,7 +402,23 @@
 
    
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+      $(function () {
+            // document is ready
+            $('.clientGallery').flickity({
+                  wrapAround: true,
+                  pageDots: false
+            });
 
+            $('a').smoothScroll({
+                  offset: -60,
+                  speed: 800
+            });
+      });
+</script>
 
 </body>
 </html>

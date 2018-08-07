@@ -3,6 +3,11 @@
 @import "partials/utils";
 @import "partials/typography";
 @import "partials/header";
+@import "partials/welcome";
+@import "partials/services";
+@import "partials/testimonials";
+@import "partials/sample";
+@import "partials/clients";
 @import "partials/footer";
 
 
@@ -33,8 +38,10 @@ img {
 .wrapper {
    max-width: 1080px;
    margin: 0 auto;
-   width: 65%;
+   width: 70%;
 }
+
+
 
 
 
