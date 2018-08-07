@@ -1,0 +1,41 @@
+// VARIABLES and MIXINS
+
+
+// ===================VARIABLES======================
+// font-styles
+   $font-main: 'Catamaran', sans-serif;
+   $font-description: 'Lato', sans-serif;
+
+// ======================Colors===================
+
+// background-colors
+   $bg-lightest: #fff;
+   $bg-light: #f5f3f3;
+   $bg-medium: #efefef;
+   // accents
+   $bg-accent1: #bec884; 
+   $bg-accent2: #f2b094;
+   // font-colors 
+   $font-dark: #2a2a2a;
+
+// =====================MIXINS===================
+
+// @mixin fontSize($sizeValue) {
+//    font-size: $sizeValue * 1px;
+//    font-size: ($sizeValue/10) * 1rem;
+//    color: #2a2a2a;
+//    font-weight: 400;
+// }
+@mixin position($type, $top, $right, $bottom, $left) {
+   position: $type;
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+@mixin flex($flex, $direction, $justify-content, $align-items) {
+   display: $flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align-items;
+}

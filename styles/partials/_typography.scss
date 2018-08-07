@@ -1,0 +1,15 @@
+// TYPOGRAPHY 
+// font-family: 'Catamaran', sans-serif;
+// font-family: 'Lato', sans-serif;
+
+.title {
+   font-family: 'Catamaran', sans-serif;
+   font-size: 3.2rem; 
+}
+.txt-uppercase {
+   text-transform: uppercase;
+}
+.txt-button {
+   letter-spacing: 2px;
+   color: $font-dark;
+}

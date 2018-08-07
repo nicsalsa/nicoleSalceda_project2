@@ -1,0 +1,41 @@
+// imports
+@import "partials/setup";
+@import "partials/utils";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/footer";
+
+
+// general styles
+html {
+   font-size: 62.5%;
+   font-size: 10px;
+}
+body, ul, h1, h2, h3, p {
+   margin: 0;
+   padding: 0;
+}
+body {
+   margin: 0 auto;
+   font-family: $font-main;
+   font-size: 1.6rem;
+   color: $font-dark;
+}
+li {
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+}
+img {
+   width: 100%;
+}
+.wrapper {
+   max-width: 1080px;
+   margin: 0 auto;
+   width: 65%;
+}
+
+
+
+
