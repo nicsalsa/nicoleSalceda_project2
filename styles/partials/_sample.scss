@@ -3,6 +3,9 @@
    .sampleGallery {
       display: flex;
       justify-content: row;
+      @include breakPoint(break4) {
+         flex-direction: column;
+      }
 
       .sampleImg {
          @include position(relative, 0, 0, 0, 0);
@@ -20,8 +23,16 @@
             padding: 0 5rem;
             @include position(absolute, 0, 0, 0, 0);
             display:none;
+            .sampleImg__title {
+               @include breakPoint(break1) {
+                  font-size: 1.5rem;
+               }
+            }
             .sampleImg__content--content {
                font-family: 'Lato', sans-serif;
+               @include breakPoint(break1) {
+                  font-size: 1.2rem;
+               }
             }
          }
       }
