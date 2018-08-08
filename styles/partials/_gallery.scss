@@ -42,12 +42,23 @@
          @include breakPoint(break1) {
             width: 100%;
          }
+         @include breakPoint(break5) {
+            width: 100%;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+         }
          .gallery__items__quad {
             @include position(relative, 0, 0, 0, 0);
             width: calc(50% - 20px);
             &:hover .quad__content {
                   display:block;
                }
+            @include breakPoint(break5) {
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+            }
             img {
                display: block;
                width: 100%;
@@ -68,9 +79,15 @@
          }
          .quad1, .quad3 {
             margin: 0 10px;
+            @include breakPoint(break5) {
+                  margin: 0;
+            }
          }
          .quad3, .quad4 {
             margin-top: 10px;
+            @include breakPoint(break5) {
+                  margin: 0;
+            }
          }
       }
    }
