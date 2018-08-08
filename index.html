@@ -12,17 +12,20 @@
 </head>
 <body>
 <!-- HEADER SECTION BEGINS -->
-   <header>
+   <header id="home">
       <nav class="header__nav">
          <div class="header__navWrapper wrapper">
             <h3 class="header__title title txt-uppercase">photography</h3>
             <ul class="header__list">
-               <li class="header__list__item"><i class="fas fa-bars"></i></li>
-               <li class="header__list__item txt-uppercase">Home</li>
-               <li class="header__list__item txt-uppercase">Gallery</li>
-               <li class="header__list__item txt-uppercase">Blog</li>
-               <li class="header__list__item txt-uppercase">Bookings</li>
-               <li class="header__list__item txt-uppercase">About us</li>
+                  <label for="hamburger">
+                        <i class="fas fa-bars"></i>
+                  </label>
+                  <input type="checkbox" id="hamburger">
+                  <li class="header__list__item txt-uppercase"><a href="#home">Home</a></li>
+                  <li class="header__list__item txt-uppercase"><a href="#gallery">Gallery</a></li>
+                  <li class="header__list__item txt-uppercase"><a href="#blog">Blog</a></li>
+                  <li class="header__list__item txt-uppercase"><a href="#bookings">Bookings</a></li>
+                  <li class="header__list__item txt-uppercase"><a href="#about">About us</a></li>
             </ul>
          </div>
       </nav>
@@ -136,7 +139,7 @@
       </section>
       <!-- END of sample section -->
       <!-- CLIENTS SECTION BEGINS -->
-      <section class="clients">
+      <section class="clients" id="gallery">
          <h2 class="clients__title title txt-uppercase">happy clients</h2>
          <!-- flickity scroll goes here -->
          <ul class="clientGallery wrapper">
@@ -264,33 +267,6 @@
                      </figure>
                   </div>
             </div>
-         <!-- LEARN HOW TO SWITCH ON CLICK TO DIFFERENT GALLERY -->
-         <!-- <div class="gallery__items">
-            <figure>
-               <img src="" alt="">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
-               </figcaption>
-            </figure>
-            <figure>
-               <img src="" alt="">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
-               </figcaption>
-            </figure>
-            <figure>
-               <img src="" alt="">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
-               </figcaption>
-            </figure>
-            <figure>
-               <img src="" alt="">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
-               </figcaption>
-            </figure>
-         </div> -->
       </section>
       <!-- END of Gallery -->
    </main>
@@ -324,7 +300,7 @@
       </section>
       <!-- footer-contact ends -->
       <!-- footer-about begins -->
-      <section class="about">
+      <section class="about" id="about">
          <h3 class="about__title txt-uppercase subtitle">about us</h3>
             <p class="about__content">We are creative and modern web studio. Newest technologies it’s about us. We keep up with time, your web site will contain
             all of the best and modern trends. We are making web since 2005.</p>
@@ -386,7 +362,7 @@
       <h3 class="ftrnav__title title txt-uppercase">photography</h3>
       <ul class="ftrnav__list">
          <li class="ftrnav__list__item">
-            <a href="#" class="txt-uppercase">home</a>
+            <a href="#home" class="txt-uppercase">home</a>
          </li>
          <li class="ftrnav__list__item">
             <a href="#" class="txt-uppercase">demos</a>
@@ -398,7 +374,7 @@
             <a href="#" class="txt-uppercase">pages</a>
          </li>
          <li class="ftrnav__list__item">
-            <a href="#" class="txt-uppercase">about us</a>
+            <a href="#about" class="txt-uppercase">about us</a>
          </li>
       </ul>
    </section>

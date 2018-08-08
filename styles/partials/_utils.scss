@@ -77,3 +77,8 @@
     }
 
 }
+@mixin minBreak($point) {
+   @if $point == break5 {
+      @media (min-width:650px) {@content;}
+   }
+}

@@ -25,12 +25,24 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            a {
+               color: $font-dark;
+               &:hover {
+                  color: $bg-accent2;
+               }
+            }
+            label {
+               display:none;
+            }
             @include breakPoint(break5) {
                flex-direction: column;
                justify-content: center;
                align-items: center;
                width: 100%;
-               background: linear-gradient(rgba(255,255,255,0.8));
+               // background: linear-gradient(rgba(255,255,255,0.8));
+               label {
+                  display: block;
+               }
             }
             .header__list__item {
                padding: 1.5rem;
@@ -41,9 +53,6 @@ header {
                   @include breakPoint(break5) {
                      display: block;
                   }
-               }
-               &:hover {
-                  color: $bg-accent2;
                }
             }
          }
@@ -96,5 +105,15 @@ header {
             font-weight: 700;
          }
       }
+   }
+}
+
+#hamburger {
+   display:none;
+}
+#hamburger:checked ~ li {
+   display: none;
+      @include minBreak(break5) {
+      display: flex;
    }
 }
