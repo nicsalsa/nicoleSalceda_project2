@@ -17,6 +17,7 @@
          <div class="header__navWrapper wrapper">
             <h3 class="header__title title txt-uppercase">photography</h3>
             <ul class="header__list">
+               <li class="header__list__item"><i class="fas fa-bars"></i></li>
                <li class="header__list__item txt-uppercase">Home</li>
                <li class="header__list__item txt-uppercase">Gallery</li>
                <li class="header__list__item txt-uppercase">Blog</li>
@@ -296,7 +297,7 @@
 <!-- END OF MAIN SECTION -->
 <!-- FOOTER BEGINS -->
 <footer>
-   <div class="footer wrapper">
+   <div class="footer wrapper clearfix">
       <!-- footer-contact begins -->
       <section class="contact">
          <h3 class="contact__title txt-uppercase subtitle">contact</h3>
@@ -419,7 +420,8 @@
             // document is ready
             $('.clientGallery').flickity({
                   wrapAround: true,
-                  pageDots: false
+                  pageDots: false,
+                  prevNextButtons: false
             });
 
             $('a').smoothScroll({

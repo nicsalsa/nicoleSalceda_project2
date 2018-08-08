@@ -9,6 +9,10 @@
    .news__list {
       display: flex;
       justify-content: space-between;
+      @include breakPoint(break1) {
+         flex-direction: column;
+         align-items: center;
+      }
       .news__article {
          margin: 1rem;
          .news__article__content {
@@ -17,6 +21,10 @@
                font-weight: 700;
                font-family: $font-main;
                font-size: 1.6rem;
+            }
+            .font-accent:hover {
+               font-weight: 700;
+               font-size: 1.7rem;
             }
          }
       }

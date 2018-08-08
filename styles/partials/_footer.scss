@@ -26,10 +26,7 @@
          border: solid 1px black;
          display: flex;
          align-items: center;
-         // justify-content: space-between;
          position:relative;
-         // border-top: solid 1px black;
-         // border-bottom: solid 1px black;
          .formEmail__placeholder {
            border: none;
            width: 90%;
@@ -63,27 +60,49 @@
    }
 }
 .social {
-   width: 10%;
+   width: 100%;
+   height: 100%;
+   position: relative;
    .social__list {
-      display: block;
-      background: green;
-      @include position(absolute, 0, 10px, 0, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 100%;
+      padding-bottom: 5rem;
+      position: absolute;
+      top: -50px;
+      right: 0;
       .social__list__item {
-         display: block;
+         // display: block;
+         i {
+            color: $bg-dark;
+            padding: 3rem 0;
+            &:hover {
+               color: $font-accent;
+            }
+         }
 
       }
    }
 }
 .ftrnav {
+   padding: 5rem;
    .ftrnav__list {
       display: flex;
       justify-content: space-around;
       a {
-         
+         font-weight: 700;
+         color: $font-dark;
+      }
+      a:hover {
+         color: $font-accent;
+         font-size: 1.7rem;
       }
    }
 }
 .copyright {
    background: black;
    color: white;
+   text-align: center;
 }

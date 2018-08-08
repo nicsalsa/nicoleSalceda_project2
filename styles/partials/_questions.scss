@@ -21,9 +21,17 @@
          }
       }
       .question__form--button {
-         text-align: center;
+         width: 125px;
+         border-radius: 1.6rem;
+         border: solid $font-dark 1px;
+         background: transparent;
+         padding: 3px;
          letter-spacing: 2px;
          font-weight: 700;
+         &:hover {
+            background-color: $font-accent;
+            color: $font-lightest;
+         }
       }
    }
 }

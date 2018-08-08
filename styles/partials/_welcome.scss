@@ -4,6 +4,12 @@
    padding: 10rem;
    margin: 0 auto;
    text-align: center;
+   @include breakPoint(break2) {
+      padding: 5rem;
+   }
+   @include breakPoint(break4) {
+      padding: 10rem 0;
+   }
    .welcome__title {
       .welcome__title--accent {
          color: $font-accent;
@@ -11,5 +17,9 @@
    }
    .welcome__text {
       @include fontContent($font-description);
+      @include breakPoint(break4) {
+         font-size: 1.6rem;
+         width: 100%;
+      }
    }
 }

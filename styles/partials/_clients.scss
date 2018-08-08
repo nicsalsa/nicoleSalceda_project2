@@ -8,11 +8,17 @@
          flex-direction: column;
          justify-content: center;
          align-items:center;
-         width: 800px;
+         width: 80rem;
          padding: 5rem 10rem 0;
          img {
             width: 100px;
             padding: 0 0 5rem 0;
+         }
+         @include breakPoint(break2) {
+            width: 60rem;
+         }
+         @include breakPoint(break4) {
+            width: 40rem;
          }
          .clientGallery__list__description {
             text-align: center;
