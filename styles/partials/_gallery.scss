@@ -1,56 +1,65 @@
 // GALLERY SECTION STYLES
 .gallery {
-   display: flex;
-   justify-content: space-between;
+   background-color: $bg-medium;
    padding: 10rem 0;
-   .gallery__nav {
-      background-color: $bg-dark;
-      color: $font-lightest;
-      width: 33.33%;
+   .gallery__wrapper {
       display: flex;
-      flex-direction: column;
-      .gallery__nav__title {
-         padding: 5rem 0 3rem 0; 
-      }
-      .gallery__nav__list {
-         .gallery__list__item {
-            a {
-               width: 100%;
-               color: #fff;
-               padding: 0 20px;
+      justify-content: space-between;
+      .gallery__nav {
+         background-color: $bg-dark;
+         color: $font-lightest;
+         width: 33.33%;
+         display: flex;
+         flex-direction: column;
+         .gallery__nav__title {
+            padding: 5rem 0 3rem 0; 
+         }
+         .gallery__nav__list {
+            .gallery__list__item {
+               a {
+                  width: 100%;
+                  color: #fff;
+                  padding: 0 20px;
+               }
+            }
+            .gallery__list__item:hover {
+               background: $bg-darker;
             }
          }
-         .gallery__list__item:hover {
-            background: $bg-darker;
-         }
       }
-   }
-   .gallery__items {
-      display: flex;
-      flex-wrap: wrap;
-      width: 66.66%;
-      .gallery__items__quad {
-         @include position(relative, 0, 0, 0, 0);
-         width: calc(50% - 20px);
-         img {
-            display: block;
-            width: 100%;
+      .gallery__items {
+         display: flex;
+         flex-wrap: wrap;
+         width: 66.66%;
+         .gallery__items__quad {
+            @include position(relative, 0, 0, 0, 0);
+            width: calc(50% - 20px);
+            img {
+               display: block;
+               width: 100%;
+            }
+            .quad__content {
+               @include position(absolute, 0, 0, 0, 0);
+               .quad__content--hover {
+                  color: $font-lightest;
+                  background: rgba(40,40,40,0.8);
+                  height: 100%;
+                  width: 100%;  
+                  display: flex;
+                  justify-content: center;
+                  align-items: center; 
+               }
+               // .quad__content--hover:hover {
+               //    display: flex;
+               // }
+            }
          }
-         .quad__content {
-            @include position(absolute, 0, 0, 0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            color: $font-lightest;
+         .quad1, .quad3 {
+            margin: 0 10px;
          }
-      }
-      .quad1, .quad3 {
-         margin: 0 10px;
-      }
-      .quad3, .quad4 {
-         margin-top: 10px;
+         .quad3, .quad4 {
+            margin-top: 10px;
+         }
       }
    }
 }

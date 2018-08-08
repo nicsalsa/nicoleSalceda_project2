@@ -1,0 +1,50 @@
+// FOOTER SECTION STYLES
+.footer {
+   background: $bg-lightest;
+   display:flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   .contact, .about, .instagram {
+      margin: 0 20px;
+   }
+   .contact {
+      width: 33.33%;
+      
+      // background: pink;
+
+   }
+   .about {
+      width: 33.33%;
+      // background: blue;
+
+   }
+   .instagram {
+      width: 33.33%;
+      // background: green;
+      .instagramWrapper {
+         // width: 33.33%;
+         .instaGallery {
+            display: flex;
+            justify-content: row;
+            // flex-direction: row;
+            flex-wrap: wrap;
+            .instaGallery__item__img{
+               margin: 2px;
+               width: calc((100% / 4) - 6px);
+            }
+         }
+      }
+
+   }
+   .social {
+      width: 10%;
+      .social__list {
+         .social__list__item {
+
+         }
+      }
+   }
+   .ftrnav {
+      background-color: $bg-darker;
+   }
+}
