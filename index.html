@@ -175,31 +175,32 @@
       <!-- END of clients section -->
       <!-- NEWS SECTION BEGINS -->
       <section class="news">
-         <article class="wrapper">
+         <h2 class="news__title title txt-uppercase">latest news</h2>
+         <article class="news__list wrapper">
             <figure class="news__article news__article--1">
                <img src="assets/image-8.jpeg" alt="view of the coast in Italy">
-               <figcaption>
-                  <p>my trip to italy</p>
-                  <p>read more 
+               <figcaption class="news__article__content">
+                  <p class="txt-uppercase news__article__content--title">my trip to italy</p>
+                  <p class="txt-uppercase font-accent">read more 
                      <i class="fas fa-angle-double-right"></i>
                   </p>
                </figcaption>
             </figure>
             <figure class="news__article news__article--2">
                <img src="assets/image-9.jpeg" alt="View of the outside of a house in Greece.">
-               <figcaption>
-                  <p>greece photoshoot</p>
-                  <p>read more
-                     <i class="fas fa-angle-double-right"></i>
+               <figcaption class="news__article__content">
+                  <p class="txt-uppercase news__article__content--title">greece photoshoot</p>
+                  <p class="txt-uppercase font-accent">read more
+                        <i class="fas fa-angle-double-right"></i>
                   </p>
                </figcaption>
             </figure>
             <figure class="news__article news__article--3">
                <img src="assets/image-10.jpeg" alt="The back of a woman's head as she turns into a rustic alleyway.">
-               <figcaption>
-                  <p>travelling with your partner</p>
-                  <p>read more 
-                     <i class="fas fa-angle-double-right"></i>
+               <figcaption class="news__article__content">
+                  <p class="txt-uppercase news__article__content--title">travelling with your partner</p>
+                  <p class="txt-uppercase font-accent">read more
+                        <i class="fas fa-angle-double-right"></i>
                   </p>
                </figcaption>
             </figure>
@@ -210,45 +211,53 @@
       <section class="question">
          <form method="POST" class="question__form wrapper" autocomplete="off" name="myQuestion">
             <label for="question" class="question__title title txt-uppercase">ask a question</label>
-            <input type="text" placeholder="your message" class="subtitle txt-uppercase">
-            <input type="submit" value="send" class="txt-button">
+            <input type="text" placeholder="your message" class="question__form--placeholder subtitle txt-uppercase">
+            <input type="submit" value="send" class="txt-uppercase question__form--button txt-button">
          </form>
       </section>
       <!-- END of questions section -->
       <!-- GALLERY BEGINS -->
       <section class="gallery wrapper">
-         <nav>
-            <h2 class="gallery__title title txt-uppercase">Latest Shoots</h2>
-            <ul class="gallery__list">
-               <li class="gallery__list__item txt-uppercase gallery__list__item--1">all</li>
-               <li class="gallery__list__item txt-uppercase gallery__list__item--2">weddings</li>
-               <li class="gallery__list__item txt-uppercase gallery__list__item--3">scenery</li>
-               <li class="gallery__list__item txt-uppercase gallery__list__item--4">portraits</li>
+         <nav class="gallery__nav">
+            <h2 class="gallery__nav__title title txt-uppercase">Latest Shoots</h2>
+            <ul class="gallery__nav__list">
+               <li class="gallery__list__item txt-uppercase gallery__list__item--1 title"><a href="#">all</a></li>
+               <li class="gallery__list__item txt-uppercase gallery__list__item--2 title"><a href="#">weddings</a></li>
+               <li class="gallery__list__item txt-uppercase gallery__list__item--3 title"><a href="#">scenery</a></li>
+               <li class="gallery__list__item txt-uppercase gallery__list__item--4 title"><a href="#">portraits</a></li>
             </ul>
          </nav>
          <div class="gallery__items">
-            <figure>
+            <figure class="gallery__items__quad quad1">
                <img src="assets/image-11.jpeg" alt="View from above of a waterfall">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
+               <figcaption class="quad__content">
+                  <a href="#" class="quad__content--hover">
+                        <p class="gallery__items__title title txt-uppercase">landing page</p>
+                  </a>
                </figcaption>
             </figure>
-            <figure>
+            <figure class="gallery__items__quad quad2">
                <img src="assets/image-12.jpeg" alt="High view of a cultural and densely populated city over the water">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
+               <figcaption class="quad__content">
+                  <a href="#" class="quad__content--hover">
+                        <p class="gallery__items__title title txt-uppercase">landing page</p>
+                  </a>
                </figcaption>
             </figure>
-            <figure>
+            <figure class="gallery__items__quad quad3">
                <img src="assets/image-13.jpeg" alt="People on the beach moving around a boat">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
+               <figcaption class="quad__content">
+                  <a href="#" class="quad__content--hover">
+                        <p class="gallery__items__title title txt-uppercase">landing page</p>
+                  </a>
                </figcaption>
             </figure>
-            <figure>
+            <figure class="gallery__items__quad quad4">
                <img src="assets/image-14.jpeg" alt="View from above of a green mountain line and coastal beach below">
-               <figcaption>
-                  <p class="gallery__items__title title txt-uppercase">landing page</p>
+               <figcaption class="quad__content">
+                  <a href="#" class="quad__content--hover">
+                        <p class="gallery__items__title title txt-uppercase">landing page</p>
+                  </a>
                </figcaption>
             </figure>
          </div>

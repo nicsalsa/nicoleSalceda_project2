@@ -1,0 +1,29 @@
+// QUESTIONS SECTION STYLES
+.question {
+   background-color: $bg-accent2;
+   padding: 10rem 0;
+   .question__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .question__form--placeholder {
+         background: transparent;
+         border: none;
+         border-top: $font-dark 1px solid;
+         border-bottom: $font-dark 1px solid;
+         margin: 2rem 0;
+         text-align: center;
+         width: 100%;
+         &::placeholder {
+            font-weight: 700;
+            color: black;
+         }
+      }
+      .question__form--button {
+         text-align: center;
+         letter-spacing: 2px;
+         font-weight: 700;
+      }
+   }
+}

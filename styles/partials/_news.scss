@@ -1,0 +1,24 @@
+// NEWS SECTION STYLES
+.news {
+   background-color: $bg-light;
+   padding: 10rem 0;
+   text-align: center;
+   .news__title {
+      padding-bottom: 5rem;
+   }
+   .news__list {
+      display: flex;
+      justify-content: space-between;
+      .news__article {
+         margin: 1rem;
+         .news__article__content {
+            text-align: left;
+            .news__article__content--title {
+               font-weight: 700;
+               font-family: $font-main;
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+}
