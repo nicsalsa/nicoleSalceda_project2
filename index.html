@@ -301,12 +301,24 @@
       <section class="contact">
          <h3 class="contact__title txt-uppercase subtitle">contact</h3>
          <div class="contact__content">
-            <p class="contact__content--email">info@delicate.com</p>
-            <p class="contact__content--phone">123 456-7890</p>
-            <p class="contact__content--city">Toronto, Ontario</p>
+            <p class="contact__content__text --email">
+                  <i class="far fa-envelope"></i>
+                  info@delicate.com
+            </p>
+            <p class="contact__content__text --phone">
+                  <i class="fas fa-phone"></i>
+                  123 456-7890
+            </p>
+            <p class="contact__content__text --city">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Toronto, Ontario
+            </p>
          </div>
-         <form action="">
-            <input type="email" placeholder="your email">
+         <form action="getEmail" class="formEmail">
+            <input class="formEmail__placeholder" type="email" placeholder="your email">
+            <button class="formEmail__button">
+                  <i class="fas fa-paper-plane"></i>
+            </button>
          </form>
       </section>
       <!-- footer-contact ends -->
@@ -349,49 +361,6 @@
                   </figure>
 
                </div>
-            <!-- <ul class="instaGallery">
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-15.jpeg" alt="a boat floating in clear blue water in the daytime.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-16.jpeg" alt="Orange exterior of home.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-17.jpeg" alt="The shore of a city on the water with boats.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-18.jpeg" alt="A bicycle with red spokes.">
-                  </figure>
-               </li> -->
-               <!-- second row of footer gallery begins -->
-               <!-- <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-19.jpeg" alt="bird's eye view of a mountain and surrounding water.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-20.jpeg" alt="A narrow European road with many colorful buildings.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-21.jpeg" alt="The back of a classic red European car.">
-                  </figure>
-               </li>
-               <li class="instaGallery__item">
-                  <figure class="instaGallery__item__img">
-                     <img src="assets/image-22.jpeg" alt="Colorful buildings on the shore.">
-                  </figure>
-               </li>
-            </ul> -->
          </div>
       </section>
       <!-- footer-instagram ends -->
@@ -412,7 +381,8 @@
    </aside>
    <!-- social icons aside ends -->
    <!-- footer-nav begins -->
-   <section class="ftrnav">
+   <section class="ftrnav wrapper">
+      <h3 class="ftrnav__title title txt-uppercase">photography</h3>
       <ul class="ftrnav__list">
          <li class="ftrnav__list__item">
             <a href="#" class="txt-uppercase">home</a>

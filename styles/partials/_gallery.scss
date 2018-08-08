@@ -34,12 +34,16 @@
          .gallery__items__quad {
             @include position(relative, 0, 0, 0, 0);
             width: calc(50% - 20px);
+            &:hover .quad__content {
+                  display:block;
+               }
             img {
                display: block;
                width: 100%;
             }
             .quad__content {
                @include position(absolute, 0, 0, 0, 0);
+               display:none;
                .quad__content--hover {
                   color: $font-lightest;
                   background: rgba(40,40,40,0.8);
@@ -49,9 +53,6 @@
                   justify-content: center;
                   align-items: center; 
                }
-               // .quad__content--hover:hover {
-               //    display: flex;
-               // }
             }
          }
          .quad1, .quad3 {
